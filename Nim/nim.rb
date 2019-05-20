@@ -1,7 +1,7 @@
 def board(option, coins, player)
     if option == "show"
         puts "\n------------------------"
-        puts "Quedan #{$coins} monedas:"
+        print "Quedan #{$coins} monedas: "
         for i in 1..$coins
             print "O "
         end
@@ -17,7 +17,7 @@ def board(option, coins, player)
 end
 
 def playerTurn
-    puts "\nTu turno."
+    print "\nTu turno. "
     correctMove = 0
     while correctMove == 0
         print "Cuantas monedas vas a tomar? "
@@ -61,4 +61,3 @@ while $coins > 0
         machineTurn
     end
 end
-
